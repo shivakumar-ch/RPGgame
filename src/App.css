@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.container {
+  height: 100vh;
+  background-color: #223a5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 90vw;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.score-title-card {
+  width: 80%;
+  padding: 20px;
+  display: flex;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+  justify-content: space-between;
+  font-weight: bold;
+  font-family: 'bree serif';
+}
+.score-card {
+  background-color: #ffffff;
+  color: #223a5f;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+.play-card {
+  width: 300px;
+  list-style-type: none;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.image {
+  width: 100px;
+  height: 100px;
+}
+.img-btn {
+  border: none;
+  background: transparent;
+  margin: 10px;
+}
+.popup-container {
+  align-self: flex-end;
+}
+.popup-content {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.rules-img {
+  width: 80vw;
+  height: 80vh;
+}
+@media screen and (max-width: 767px) {
+  .popup-content {
+    height: 50vh;
+  }
+  .rules-img {
+    height: 40vh;
+  }
+}
+.popup-close-btn {
+  align-self: flex-end;
+  border: none;
+  background-color: transparent;
+}
+
+.rules-btn {
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+.result-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+.result-images-div {
+  width: 40vw;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 767px) {
+  .result-images-div {
+    width: 80vw;
+  }
+}
+.result-img-div {
+  text-align: center;
+}
+.play-again-btn {
+  padding: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 8px;
+  border: none;
+  font-family: 'bree serif';
+}
