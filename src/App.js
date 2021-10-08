@@ -84,10 +84,7 @@ class App extends Component {
   }
 
   getChoice = () => {
-    let i = 3
-    while (i < 0 || i > 2) {
-      i = Math.floor(Math.random() * 10)
-    }
+    const i = Math.floor(Math.random() * 3)
     return choicesList[i]
   }
 
@@ -103,14 +100,12 @@ class App extends Component {
       <div className="container">
         <div className="card">
           <div className="score-title-card">
-            <div>
-              <p>ROCK</p>
-              <p>PAPER</p>
-              <p>SCISSOR</p>
+            <div className="heading">
+              <h1>Rock Paper Scissors</h1>
             </div>
             <div className="score-card">
               <p>Score</p>
-              <h1>{score}</h1>
+              <p className="scorePara">{score}</p>
             </div>
           </div>
           {showResult ? (
@@ -133,7 +128,7 @@ class App extends Component {
                   />
                 </div>
               </div>
-              <h1>{displayText}</h1>
+              <p>{displayText}</p>
               <button
                 type="button"
                 className="play-again-btn"
@@ -162,7 +157,11 @@ class App extends Component {
                       onClick={choiceFunc}
                       className="img-btn"
                     >
-                      <img className="image" src={choice.image} />
+                      <img
+                        alt={choice.id}
+                        className="image"
+                        src={choice.image}
+                      />
                     </button>
                   </li>
                 )
