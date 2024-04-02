@@ -172,6 +172,7 @@ class App extends Component {
             <Popup modal trigger={<button className="rules-btn">Rules</button>}>
               {close => (
                 <>
+                  {/* eslint-disable-next-line */}
                   <button
                     type="button"
                     className="popup-close-btn"
